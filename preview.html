@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SMR TOUR BD - Official App</title>
+<meta name="description" content="SMR TOUR BD Official Tournament App">
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;min-height:100vh;
+ display:flex;align-items:center;justify-content:center;
+ padding:25px 18px;color:white;text-align:center;
+ font-family:Arial,sans-serif;
+ background:radial-gradient(ellipse at 50% 25%,#650019,#160910 55%,#07070b);
+}
+main{width:100%;max-width:620px}
+.hero{
+ width:280px;height:280px;max-width:80vw;
+ position:relative;margin:0 auto 30px;
+ display:grid;place-items:center;
+}
+.orbit{
+ position:absolute;inset:4px;border-radius:50%;
+ border:2px solid transparent;
+ border-top-color:#ff3158;
+ border-right-color:#ff3158;
+ box-shadow:0 0 25px #ff174766;
+ animation:spin 24s linear infinite;
+}
+.orbit:before{
+ content:"";position:absolute;inset:15px;
+ border:1px solid #ff315888;border-radius:50%;
+ animation:spin 35s linear infinite reverse;
+}
+.logo{
+ width:78%;height:78%;object-fit:cover;
+ border-radius:25px;position:relative;
+ box-shadow:0 0 35px #ff174755;
+}
+h1{font-size:clamp(32px,7vw,48px);line-height:1.35}
+h1 span{color:#ff526d}
+p{font-size:20px;line-height:1.8;color:#ddd}
+.download{
+ display:block;margin-top:35px;padding:22px 12px;
+ border-radius:20px;text-decoration:none;
+ color:white;font-size:23px;font-weight:bold;
+ background:linear-gradient(100deg,#ffb9a5,#ff285c);
+ box-shadow:0 10px 35px #ff174744;
+}
+footer{margin-top:45px;color:#aaa;letter-spacing:5px}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<main>
+<div class="hero">
+<div class="orbit"></div>
+<img class="logo" src="smr-logo.jpg" alt="SMR Logo">
+</div>
+<h1>আপনি কি একজন <span>eSports</span><br>প্লেয়ার?</h1>
+<p>টুর্নামেন্টে অংশ নিতে SMR TOUR BD অ্যাপটি ডাউনলোড করুন। আপনার গেমিং যাত্রা শুরু করুন আমাদের সঙ্গে।</p>
+<a class="download" href="SMR-TOUR-BD.apk" download>
+⬇ অ্যাপটি ডাউনলোড করুন
+</a>
+<footer>SMR TOUR BD</footer>
+</main>
+</body>
+</html>
